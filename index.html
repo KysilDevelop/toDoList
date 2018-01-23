@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="controller/list-controller.js"></script>
+</head>
+<body>
+<div ng-app="listApp" ng-controller="listController">
+    <input ng-model="text">
+    <button ng-click="create()">Create</button>
+    <ul>
+        <li ng-repeat="item in lists">{{item}}</li>
+    </ul>
+</div>
+
+</body>
+</html>
